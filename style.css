@@ -1,0 +1,198 @@
+body {
+  font-family:
+    brush script mt,
+    cursive;
+  background: #fdf0f5;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#title {
+  color: #d1477a;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 9 / 6;
+  margin: 20px auto;
+  background-image: url("Images/FloorTile32x32.png");
+  background-repeat: repeat;
+  background-size: 32px 32px;
+  background-color: #cbb6e0;
+  border: 4px solid #5a4632;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 64px;
+  height: 52px;
+  transform: translate(-50%, -50%) scale(3);
+  background-image: url("images/InteriorThings32x32.png");
+  background-position: -238px -1232px;
+  image-rendering: pixelated;
+}
+
+.letter {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  width: 70px;
+  transform: translate(-50%, -50%) scale(1.6);
+  cursor: pointer;
+  animation: pulse 1.6s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.75);
+  }
+}
+
+.message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 85%;
+  max-height: 80%;
+  overflow-y: auto;
+  text-align: center;
+  font-size: 18px;
+  z-index: 100;
+}
+
+#messageText {
+  white-space: pre-line;
+}
+
+.hidden {
+  display: none;
+}
+
+#closeBtn {
+  margin-top: 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #d1477a;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#cat1 {
+  background-image: url("images/SiameseCatIdle.png");
+}
+#cat3 {
+  background-image: url("images/TigerCatIdle.png");
+}
+#cat4 {
+  background-image: url("images/ThreeColorCat\ Idle.png");
+}
+#cat5 {
+  background-image: url("images/MochiIdle.png");
+}
+#cat7 {
+  background-image: url("images/OtherMaybeUsableCats.png");
+}
+#cat8 {
+  background-image: url("images/Mochi.png");
+}
+#cat9 {
+  background-image: url("images/OtherMaybeUsableCats.png");
+}
+
+.cat {
+  position: absolute;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transform: scale(2.5);
+  transform-origin: bottom center;
+}
+
+.flippy {
+  transform: scale(2.5) scaleX(-1);
+}
+
+.cat-sleep {
+  width: 64px;
+  height: 44px;
+  animation: idleSleep 2.4s steps(4) infinite;
+  transform: scale(1.4);
+}
+
+.cat-sleep.flip {
+  transform: scale(1.4) scaleX(-1);
+}
+
+.cat-sit {
+  width: 58px;
+  height: 50px;
+  animation: idleSit 1s steps(2) infinite;
+  transform: scale(1.6);
+}
+
+.cat-sit.flip {
+  transform: scale(1.6) scaleX(-1);
+}
+
+@keyframes idleSit {
+  from {
+    background-position: 0px -80px;
+  }
+  to {
+    background-position: -130px -80px;
+  }
+}
+
+@keyframes idleSleep {
+  from {
+    background-position: 0px -150px;
+  }
+  to {
+    background-position: -256px -150px;
+  }
+}
+
+@keyframes idle7 {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: -224px 0;
+  }
+}
+.cat-7 {
+  animation: idle7 0.8s steps(7) infinite;
+}
+
+@keyframes idle10 {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: -320px 0;
+  }
+}
+.cat-10 {
+  animation: idle10 0.9s steps(10) infinite;
+}
