@@ -33,7 +33,7 @@ body {
   width: 64px;
   height: 52px;
   transform: translate(-50%, -50%) scale(3);
-  background-image: url("images/InteriorThings32x32.png");
+  background-image: url("Images/InteriorThings32x32.png");
   background-position: -238px -1232px;
   image-rendering: pixelated;
 }
@@ -96,25 +96,25 @@ body {
 }
 
 #cat1 {
-  background-image: url("images/SiameseCatIdle.png");
+  background-image: url("Images/SiameseCatIdle.png");
 }
 #cat3 {
-  background-image: url("images/TigerCatIdle.png");
+  background-image: url("Images/TigerCatIdle.png");
 }
 #cat4 {
   background-image: url("images/ThreeColorCat\ Idle.png");
 }
 #cat5 {
-  background-image: url("images/MochiIdle.png");
+  background-image: url("Images/MochiIdle.png");
 }
 #cat7 {
-  background-image: url("images/OtherMaybeUsableCats.png");
+  background-image: url("Images/OtherMaybeUsableCats.png");
 }
 #cat8 {
-  background-image: url("images/Mochi.png");
+  background-image: url("Images/Mochi.png");
 }
 #cat9 {
-  background-image: url("images/OtherMaybeUsableCats.png");
+  background-image: url("Images/OtherMaybeUsableCats.png");
 }
 
 .cat {
